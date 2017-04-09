@@ -201,7 +201,7 @@ class AxolotlReceivelayer(AxolotlBaseLayer):
 
         if not handled:
             print(m)
-            raise ValueError("Unhandled")
+            print("Received unhandled mediatype, gg")
 
     def handleSenderKeyDistributionMessage(self, senderKeyDistributionMessage, axolotlAddress):
         groupId = senderKeyDistributionMessage.groupId
