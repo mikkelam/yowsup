@@ -89,7 +89,7 @@ class YowPingThread(Thread):
         self._stop = False
         self.__logger = logging.getLogger(__name__)
         super(YowPingThread, self).__init__()
-        self.daemon = True
+        self.daemon = False
         self.name = "YowPing%s" % self.name
 
     def run(self):
