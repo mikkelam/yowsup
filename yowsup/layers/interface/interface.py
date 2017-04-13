@@ -90,6 +90,7 @@ class YowInterfaceLayer(YowLayer):
             else:
                 logger.info("Initiating reconnect")
                 self.reconnect = True
+                raise Exception("received a fucking message reply")
         else:
             logger.warn("Not reconnecting because property %s is not set" % self.__class__.PROP_RECONNECT_ON_STREAM_ERR)
         self.toUpper(streamErrorEntity)
